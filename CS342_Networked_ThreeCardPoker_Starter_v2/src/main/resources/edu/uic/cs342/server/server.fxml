@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="edu.uic.cs342.server.ServerController">
+  <top>
+    <VBox spacing="10" styleClass="header">
+      <Label text="Three Card Poker — Server Dashboard" styleClass="title"/>
+      <HBox spacing="10" alignment="CENTER_LEFT">
+        <Label text="Port:"/>
+        <TextField fx:id="portField" text="5555" prefWidth="90"/>
+        <Button text="Start Server" onAction="#handleStartServer"/>
+        <Button text="Stop Server" onAction="#handleStopServer"/>
+        <Label fx:id="statusLabel" text="Stopped"/>
+      </HBox>
+      <Label fx:id="clientCountLabel" text="Connected clients: 0"/>
+    </VBox>
+  </top>
+  <center>
+    <SplitPane dividerPositions="0.35">
+      <VBox spacing="8" styleClass="panel">
+        <Label text="Connected clients" styleClass="section-title"/>
+        <ListView fx:id="clientsList" VBox.vgrow="ALWAYS"/>
+      </VBox>
+      <VBox spacing="8" styleClass="panel">
+        <Label text="Server activity" styleClass="section-title"/>
+        <TextArea fx:id="activityArea" editable="false" wrapText="true" VBox.vgrow="ALWAYS"/>
+      </VBox>
+    </SplitPane>
+  </center>
+</BorderPane>

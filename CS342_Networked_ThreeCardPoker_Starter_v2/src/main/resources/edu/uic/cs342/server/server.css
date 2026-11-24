@@ -1,0 +1,6 @@
+.root { -fx-font-family: "Arial"; -fx-background-color: #f4f6f8; }
+.header { -fx-padding: 18; -fx-background-color: #17365d; }
+.header .label { -fx-text-fill: white; }
+.title { -fx-font-size: 20px; -fx-font-weight: bold; }
+.panel { -fx-padding: 14; }
+.section-title { -fx-font-size: 14px; -fx-font-weight: bold; }

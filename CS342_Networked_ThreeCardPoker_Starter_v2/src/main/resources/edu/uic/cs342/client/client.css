@@ -1,0 +1,6 @@
+.root { -fx-font-family: "Arial"; -fx-background-color: #f4f6f8; }
+.screen { -fx-padding: 28; }
+.title { -fx-font-size: 25px; -fx-font-weight: bold; -fx-text-fill: #17365d; }
+.subtitle { -fx-font-size: 14px; -fx-text-fill: #5b6573; }
+.primary-button { -fx-background-color: #0077c8; -fx-text-fill: white; -fx-font-weight: bold; }
+.button { -fx-cursor: hand; }

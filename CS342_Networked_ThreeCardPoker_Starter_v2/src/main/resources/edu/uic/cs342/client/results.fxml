@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="edu.uic.cs342.client.ClientController"
+      alignment="CENTER" spacing="16" styleClass="screen">
+  <Label text="Round Results" styleClass="title"/>
+  <Label text="Player hand, dealer hand, outcome, payouts, and winnings appear here."/>
+  <HBox spacing="12">
+    <Button text="New Round" onAction="#handleNewRound"/>
+    <Button text="Return to Game" onAction="#showGameScreen"/>
+  </HBox>
+  <Button text="Connection Screen" onAction="#showConnectionScreen"/>
+</VBox>
